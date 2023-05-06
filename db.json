@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "fullName": "John Doe",
+      "username": "username",
+      "password": "password",
+      "id": 1
+    },
+    {
+      "fullName": "Alexis Heart",
+      "username": "alexis143",
+      "password": "alexis143",
+      "id": 1
+    },
+    {
+      "fullName": "Kirk Hammett",
+      "username": "hammetk",
+      "password": "hammetk",
+      "id": 2
+    },
+    {
+      "username": "Stephen Curry",
+      "password": "stephenc",
+      "fullName": "stephenc",
+      "id": 3
+    }
+  ],
+  "items": [
+    {
+      "name": "caliper",
+      "description": "Digital caliper",
+      "status": "available",
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "name": "hammer",
+      "description": "Ball Peen hammer",
+      "status": "available",
+      "id": 2,
+      "userId": 1
+    },
+    {
+      "name": "Micrometer",
+      "description": "Pittsburgh digital micrometer",
+      "status": "available",
+      "id": 3,
+      "userId": 1
+    },
+    {
+      "name": "Wrench",
+      "description": "Adjustable Wrench",
+      "status": "available",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "name": "Plier",
+      "description": "Long Nose Plier",
+      "status": "available",
+      "id": 5,
+      "userId": null
+    },
+    {
+      "name": "Ratchet",
+      "description": "Flex head Ratchet",
+      "status": "available",
+      "userId": 1,
+      "id": 6
+    }
+  ],
+  "itemsHistory": [
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 1,
+      "timeStamp": "5/6/2023, 1:57:10 PM",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 2,
+      "timeStamp": "5/6/2023, 1:57:31 PM",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 3,
+      "timeStamp": "5/6/2023, 1:57:32 PM",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 6,
+      "timeStamp": "5/6/2023, 1:57:34 PM",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "transaction": "Return",
+      "itemId": 1,
+      "timeStamp": "5/6/2023, 1:58:23 PM",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "transaction": "Return",
+      "itemId": 2,
+      "timeStamp": "5/6/2023, 1:58:26 PM",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "transaction": "Return",
+      "itemId": 3,
+      "timeStamp": "5/6/2023, 1:58:27 PM",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "transaction": "Return",
+      "itemId": 6,
+      "timeStamp": "5/6/2023, 1:58:28 PM",
+      "id": 8
+    }
+  ]
+}
