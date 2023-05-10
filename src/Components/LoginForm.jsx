@@ -3,16 +3,13 @@ import { useAuth } from "../providers/authProvider";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-
-
 export const LoginForm = () => {
   const navigate = useNavigate();
   const [usernameInput, setUsernameInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
-  
+
   const { login, loginSuccess } = useAuth();
 
-  
   useEffect(() => {
     loginSuccess && navigate("../User");
   }, [loginSuccess, navigate]);
@@ -44,9 +41,7 @@ export const LoginForm = () => {
           }}
           value={usernameInput}
           autoComplete=""
-         
         />
-        
 
         <input
           type="password"
@@ -56,9 +51,8 @@ export const LoginForm = () => {
           }}
           value={passwordInput}
           autoComplete=""
-         
         />
-       
+
         <input
           type="submit"
           value="submit"

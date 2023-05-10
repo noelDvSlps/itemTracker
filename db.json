@@ -29,29 +29,29 @@
     {
       "name": "caliper",
       "description": "Digital caliper",
-      "status": "available",
+      "status": "unavailable",
       "id": 1,
       "userId": 1
     },
     {
       "name": "hammer",
       "description": "Ball Peen hammer",
-      "status": "available",
+      "status": "unavailable",
       "id": 2,
       "userId": 1
     },
     {
       "name": "Micrometer",
       "description": "Pittsburgh digital micrometer",
-      "status": "available",
+      "status": "unavailable",
       "id": 3,
       "userId": 1
     },
     {
       "name": "Wrench",
       "description": "Adjustable Wrench",
-      "status": "available",
-      "userId": null,
+      "status": "unavailable",
+      "userId": 1,
       "id": 4
     },
     {
@@ -59,12 +59,12 @@
       "description": "Long Nose Plier",
       "status": "available",
       "id": 5,
-      "userId": null
+      "userId": 1
     },
     {
       "name": "Ratchet",
       "description": "Flex head Ratchet",
-      "status": "available",
+      "status": "unavailable",
       "userId": 1,
       "id": 6
     }
@@ -125,6 +125,48 @@
       "itemId": 6,
       "timeStamp": "5/6/2023, 1:58:28 PM",
       "id": 8
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 3,
+      "timeStamp": "5/6/2023, 7:16:46 PM",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 5,
+      "timeStamp": "5/6/2023, 7:16:47 PM",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 6,
+      "timeStamp": "5/6/2023, 7:16:50 PM",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 4,
+      "timeStamp": "5/6/2023, 7:16:51 PM",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "transaction": "Borrow",
+      "itemId": 1,
+      "timeStamp": "5/6/2023, 7:16:53 PM",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "transaction": "Return",
+      "itemId": 5,
+      "timeStamp": "5/6/2023, 7:17:24 PM",
+      "id": 14
     }
   ]
 }
