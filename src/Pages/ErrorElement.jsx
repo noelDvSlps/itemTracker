@@ -1,11 +1,11 @@
-import { useRouteError } from "react-router-dom"
+import { useRouteError } from "react-router-dom";
 
 export const ErrorElement = () => {
-    const error = useRouteError()
-   return (
+  const error = useRouteError();
+  return (
     <div>
-    <h2>ERROR</h2>
-    <p>{error.message}</p>
-</div>
-   )
-}
+      <h2>ERROR</h2>
+      <p>{error.message}</p>
+    </div>
+  );
+};

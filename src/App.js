@@ -21,14 +21,10 @@ import { ErrorElement } from "./Pages/ErrorElement";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route 
-      path="/" element={<Main />} 
-      loader={allUsersLoader}
-      
-      />
+      <Route path="/" element={<Main />} loader={allUsersLoader} />
 
       <Route
-      // historyLoader={dataLoader}
+        // historyLoader={dataLoader}
         path="User"
         element={<User />}
         loader={allItemsLoader}
@@ -56,8 +52,8 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-          <Toaster />
-          <RouterProvider router={router} />
+        <Toaster />
+        <RouterProvider router={router} />
       </AuthProvider>
     </div>
   );

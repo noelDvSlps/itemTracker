@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import { getUsers } from "../api/user/getUsers";
 import { ItemCard } from "./ItemCard";
 
-export const ItemsList = ({allItemsLoaded}) => {
-
+export const ItemsList = ({ allItemsLoaded }) => {
   const [allUsers, setAllUsers] = useState([]);
-  
 
   const getAllUsers = async () => {
     return await getUsers().then((users) => {
@@ -19,17 +17,15 @@ export const ItemsList = ({allItemsLoaded}) => {
       ? JSON.parse(localStorage.getItem("itemFilterInput"))
       : ""
   );
-  
-  const items = allItemsLoaded;
-  const [filteredItems, setFilteredItems] = useState(
-    items
-  );
 
- 
+  const items = allItemsLoaded;
+  const [filteredItems, setFilteredItems] = useState(items);
 
   useEffect(() => {
     setFilteredItems(
-      items.filter(item =>  item.name.toLowerCase().includes(itemFilterInput.toLowerCase()))
+      items.filter((item) =>
+        item.name.toLowerCase().includes(itemFilterInput.toLowerCase())
+      )
     );
   }, [items, itemFilterInput]);
 
@@ -38,8 +34,8 @@ export const ItemsList = ({allItemsLoaded}) => {
   }, []);
 
   return (
-    <section style={{ padding: "50px"}}>
-      <label style ={{color: "white"}}>Search Item   </label>
+    <section style={{ padding: "50px" }}>
+      <label style={{ color: "white" }}>Search Item </label>
       <input
         style={{ width: "200px" }}
         type="text"
@@ -64,7 +60,7 @@ export const ItemsList = ({allItemsLoaded}) => {
         }}
       >
         {filteredItems.map((item) => {
-          return <ItemCard key={item.id} item={item} allUsers={allUsers}  />;
+          return <ItemCard key={item.id} item={item} allUsers={allUsers} />;
         })}
       </div>
     </section>

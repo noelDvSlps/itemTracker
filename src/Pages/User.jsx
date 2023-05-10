@@ -6,16 +6,15 @@ import { getItems } from "../api/item/getItems";
 import { useAuth } from "../providers/authProvider";
 
 export const User = () => {
- 
   const { user } = useAuth();
   const navigate = useNavigate();
   useEffect(() => {
     !user && navigate("../");
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const allItemsLoaded =  useLoaderData() 
-  
+  const allItemsLoaded = useLoaderData();
+
   localStorage.setItem("activeWindow", "user");
 
   return (
@@ -29,8 +28,7 @@ export const User = () => {
         minHeight: "85vh",
       }}
     >
-      {user && <ItemsList   allItemsLoaded={allItemsLoaded}   />}
-    
+      {user && <ItemsList allItemsLoaded={allItemsLoaded} />}
     </section>
   );
 };
@@ -39,5 +37,3 @@ export const allItemsLoader = async () => {
   const res = await getItems();
   return res;
 };
-
-
